@@ -91,20 +91,62 @@ nav{background:var(--red);position:sticky;top:0;z-index:200;box-shadow:0 2px 20p
 .text-center .section-sub{margin:0 auto;}
 
 /* ABOUT */
-.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;}
-.about-story{background:#fff;border-radius:20px;padding:36px;border:1px solid rgba(196,30,36,.1);}
-.about-story p{color:var(--muted);font-size:.93rem;line-height:1.85;margin-bottom:14px;font-family:'DM Sans',sans-serif;}
-.about-story p:last-child{margin-bottom:0;}
-.about-certs{display:flex;gap:16px;align-items:center;margin-top:20px;flex-wrap:wrap;}
-.cert-badge{background:var(--surface);border:1px solid rgba(196,30,36,.15);border-radius:12px;padding:10px 16px;font-size:.8rem;font-weight:600;color:var(--dark);display:flex;align-items:center;gap:6px;}
-.about-stats{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
-.stat-box{background:var(--surface);border-radius:16px;padding:24px;border:1px solid rgba(196,30,36,.1);text-align:center;}
-.stat-icon{font-size:1.8rem;margin-bottom:8px;}
-.stat-num{font-size:1.6rem;font-weight:900;color:var(--red);font-family:'Outfit',sans-serif;}
-.stat-label{font-size:.78rem;color:var(--muted);font-family:'DM Sans',sans-serif;margin-top:4px;}
-.about-logo-row{display:flex;align-items:center;gap:16px;margin-top:28px;padding-top:24px;border-top:1px solid rgba(196,30,36,.1);}
-.about-logo-row img{height:48px;object-fit:contain;}
-
+<!-- ══════ ABOUT PAGE ══════ -->
+<div id="page-about" class="page">
+  <!-- About Hero Banner -->
+  <div class="product-page-hero">
+    <div class="product-page-hero-inner">
+      <button class="back-btn" onclick="navTo('home')">← Back</button>
+      <div class="product-page-title">
+        <h1>About KMP Hyper Foods™</h1>
+        <p>Our story, mission & certifications</p>
+      </div>
+    </div>
+  </div>
+  <section class="section" style="background:var(--surface);padding-top:48px;">
+    <div class="section-inner">
+      <div class="about-grid">
+        <div>
+          <div class="section-badge">Our Story</div>
+          <h2 class="section-title">Who We Are</h2>
+          <div class="about-story">
+            <p>KMP Hyper Foods, founded by food technologists, is a premium maker of ready-to-cook frozen snacks, offering a wide range of products including momos, kebabs, and other innovative items.</p>
+            <p>Based in Guntur, the spice capital of India, we blend scientific expertise with authentic flavours to create products known for their quality and taste.</p>
+            <p>Our products are developed by professionals using carefully selected, high-quality ingredients to ensure consistency, safety, and great flavour. Made for modern food businesses, they deliver reliable, restaurant-quality results every time.</p>
+            <p>With an emphasis on hygiene, innovation and customer satisfaction, KMP Hyper Foods is transforming the way the food industry perceives frozen snacks — making them easy to prepare, delightful to serve, and loved by everyone.</p>
+            <p><strong>KMP Hyper Foods currently operates across Andhra Pradesh, Telangana, and Tamil Nadu.</strong></p>
+            <div class="about-certs">
+              <div class="cert-badge">✅ FSSAI Certified </div>
+              <div class="cert-badge">☪️ Halal Certified</div>
+            </div>
+            <div class="about-logo-row">
+              <img data-img="kmpLogo" src="images/kmp-logo.jpg" alt="KMP Hyperfoods" style="height:52px;border-radius:8px;">
+              <img data-img="gomamozLogo" src="images/gomamoz-logo.jpg" alt="Go Momoz" style="height:52px;">
+            </div>
+          </div>
+        </div>
+        <div class="about-stats">
+          <div class="stat-box"><div class="stat-icon">🏭</div><div class="stat-num">1</div><div class="stat-label">Modern Factory</div></div>
+          <div class="stat-box"><div class="stat-icon">🥟</div><div class="stat-num">13+</div><div class="stat-label">Momo Varieties</div></div>
+          <div class="stat-box"><div class="stat-icon">🌍</div><div class="stat-num">3</div><div class="stat-label">States Covered</div></div>
+          <div class="stat-box"><div class="stat-icon">⭐</div><div class="stat-num">500+</div><div class="stat-label">Happy Clients</div></div>
+          <div class="stat-box"><div class="stat-icon">✅</div><div class="stat-num">FSSAI</div><div class="stat-label">Certified</div></div>
+          <div class="stat-box"><div class="stat-icon">❄️</div><div class="stat-num">100%</div><div class="stat-label">Snap Frozen</div></div>
+        </div>
+      </div>
+    </div>
+    <div style="margin-top:48px;">
+  <img
+    src= "https://i.ibb.co/W4nps1RT/Gemini-Generated-Image-epgo0cepgo0cepgo.png"
+    alt="KMP Hyper Foods"
+    style="width:60%;height:420px;object-fit:cover;border-radius:20px;box-shadow:0 8px 32px rgba(196,30,36,.12);"
+  >
+  <p style="text-align:center;margin-top:12px;font-size:.82rem;color:#666;">
+    KMP Hyper Foods™ — Guntur, Andhra Pradesh
+  </p>
+</div>
+  </section>
+</div>
 /* BRAND CARDS */
 .brand-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:48px;}
 .brand-card{border-radius:24px;overflow:hidden;border:1.5px solid rgba(196,30,36,.12);transition:all .3s;cursor:pointer;}
